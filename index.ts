@@ -78,7 +78,7 @@ interface properties: {
   isAvailable: boolean;
 }[] = [
   {
-    image: 'images/colombia-property.jpg',
+    image: './images/colombia-property.jpg',
     title: 'Colombian Shack',
     price: 45,
     location: {
@@ -93,7 +93,7 @@ interface properties: {
 
   const properties : Property[] = [
   {
-    image: 'images/poland-property.jpg',
+    image: './images/poland-property.jpg',
     title: 'Polish Cottage',
     price: 30,
     location: {
@@ -106,7 +106,7 @@ interface properties: {
     isAvailable: false
   },
   {
-  image: 'images/london-property.jpg',
+  image: './images/london-property.jpg',
   title: 'London Flat',
   price: 25,
   location: {:
@@ -119,7 +119,7 @@ interface properties: {
   isAvailable: true
   },
   {
-    image: 'images/malaysian-hotel.jpeg',
+    image: './images/malaysian-hotel.jpeg',
     title: 'Malia Hotel',
     price: 35,
     location: {
