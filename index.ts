@@ -5,11 +5,12 @@ import { Review, Property } from './interfaces'
 import MainProperty from './classes'
 
 //  const reviewTotalDisplay = document.querySelector("#reviews");
-const propertyContainer = document.querySelector(".properties");
-const reviewContainer = document.querySelector('.reviews');
-const container = document.querySelector('.container')
-const button = document.querySelector('button');
-const footer = document.querySelector(".footer");
+const propertyContainer = document.querySelector('.properties') as HTMLElement
+const footer = document.querySelector('.footer') as HTMLElement
+
+const reviewContainer = document.querySelector('.reviews') as HTMLElement
+const container = document.querySelector('.container') as HTMLElement
+const button = document.querySelector('button') as HTMLElement
 
 let isLoggedIn: boolean;
 
@@ -209,7 +210,7 @@ let yourMainProperty = new MainProperty(
   }]
 )
 
-const mainImageContainer = document.querySelector('.main-image')
+const mainImageContainer = document.querySelector('.main-image') as HTMLElement
 const image = document.createElement('img')
 image.setAttribute('src', yourMainProperty.src)
 mainImageContainer?.appendChild(image)
