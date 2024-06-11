@@ -3,7 +3,11 @@ const returningUserDisplay = document.querySelector("#returning-user");
 const userNameDisplay = document.querySelector("#user");
 import { loyaltyUser, Permissions } from "./enums";
 import { Review } from "./interfaces";
-/*
+import { Review } from './interfaces'
+const reviewTotalDisplay = document.querySelector('#reviews') as HTMLElement
+const returningUserDisplay = document.querySelector('#returning-user') as HTMLElement
+const userNameDisplay = document.querySelector('#user') as HTMLElement
+
 enum Permissions {
   ADMIN = "ADMIN",
   READ_ONLY = "READ_ONLY",
@@ -14,7 +18,7 @@ enum loyaltyUser {
   SILVER_USER = "SILVER_USER",
   BRONZE_USER = "BRONZE_USER",
 }
-*/
+
 export function showReviewTotal(
   value: number,
   reviewer: string,
@@ -32,7 +36,7 @@ export function showReviewTotal(
 }
 
 export function populateUser(isReturning: boolean, userName: string) {
-  if (isReturning) {
+  if (isReturning == true) {
     returningUserDisplay.innerHTML = "back";
   }
   userNameDisplay.innerHTML = userName;
