@@ -1,7 +1,8 @@
 import { showReviewTotal, populateUser, showDetails, getTopTwoReviews } from './utils'
 import { Permissions , loyaltyUser } from './enums';
 import { Price, Country } from "./types"
-import { Review } from "./interfaces"
+import { Review, Property } from './interfaces'
+import MainProperty from './classes'
 
 //  const reviewTotalDisplay = document.querySelector("#reviews");
 const propertyContainer = document.querySelector(".properties");
